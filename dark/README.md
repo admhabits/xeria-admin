@@ -1,6 +1,6 @@
 
 # Xeria - The most complete web ui kit and dashboard template
-
+> Demo https://admhabits.github.io/xeria-admin/dark/dist/
 Thank you for purchasing Xeria :). The following guideline will help you to get started with ubold and its documentation.
 
 #### Docs
