@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Xeria - Responsive Admin Dashboard Template</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta content="A fully featured admin theme which can be used to build CRM, CMS, etc." name="description" />
+        <meta content="Coderthemes" name="author" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <!-- App favicon -->
+        <link rel="shortcut icon" href="public/assets/images/favicon.ico">
+
+
+         <%- HeaderCss %>
+         <% include ./Partials/HeaderStyle  %>
+        </head>
+        <body>
+          <div id="if_loader_needed"></div>
+                <% include ./Partials/Header  %>
+
+                  <div class="wrapper">
+                    <div  class="container-fluid">
+               
+                                <%- breadcrumb %>
+                                <%- body %>
+                         </div> <!-- container -->
+                    </div> <!-- content -->
+
+                 <% include ./Partials/Footer %>
+                 <% include ./Partials/Rightbar  %>
+
+         <script src="public/assets/js/vendor.min.js"></script>
+    
+         <%- FooterJs %>
+   
+     <script src="public/assets/js/app.min.js"></script>
+       <%- BottomJs %>
+</body>
+</html>

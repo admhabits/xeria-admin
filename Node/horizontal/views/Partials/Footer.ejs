@@ -1,0 +1,59 @@
+    <footer class="footer">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-6">
+                        <%= new Date().getFullYear(); %>  &copy; Xeria theme by <a href="">Coderthemes</a> 
+                    </div>
+                    <div class="col-md-6">
+                        <div class="text-md-right footer-links d-none d-sm-block">
+                            <a href="javascript:void(0);">About Us</a>
+                            <a href="javascript:void(0);">Help</a>
+                            <a href="javascript:void(0);">Contact Us</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script>
+        function make_animation(value)
+        {
+            $(".navigation-menu>li.active").removeClass('active');
+            $('#layout_id').addClass('active');
+           
+           $("#"+value).addClass('active');
+ 
+           if(value == 'dark')
+            {
+                $('body').attr('class', '');
+                $('body').addClass('topbar-dark');
+            }
+            else if(value == 'light')
+            {  
+                $('body').attr('class', '');
+                $('body').addClass('menubar-light topbar-dark');
+            }
+            else if(value == 'center')
+            {
+                $('body').attr('class', '');
+                $('body').addClass('center-menu');
+            }
+            else if(value == 'preloader1')
+            {
+              $('#if_loader_needed').append("<div id='preloader'><div id='status'><div  class='bouncingLoader'><div ></div><div ></div><div ></div></div></div></div>");
+              setTimeout(function() {   $('#preloader').css('display','none');  $('#status').css('display','none');    }, 3000);
+            }
+            else if(value == 'header')
+            {
+                $('body').attr('class', '');
+                $('body').addClass('unsticky-header');
+            }
+            else if(value == 'boxed')
+            {
+                $('body').attr('class', '');
+                $('body').addClass('boxed-layout');
+            }
+            else
+            { }
+        }
+        </script>
